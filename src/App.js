@@ -143,10 +143,9 @@ const App = () => {
 
       const screenval = document.querySelector('.screenval');
       const header = document.querySelector('.header');
-      
-      // btn.style.
-      screenval.style.color = toggleState === 'light' ? 'black' : 'black';
-      header.style.color = toggleState === 'light' ? 'black' : 'black';
+    
+      screenval.style.color = toggleState === 'dark' ? 'black' : 'white';
+      header.style.color = toggleState === 'dark' ? 'black' : 'white';
   }
 
   const bodyStyle = {
