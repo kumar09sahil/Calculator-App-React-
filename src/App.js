@@ -140,13 +140,14 @@ const App = () => {
   }
   const toggleEvent = () =>{
     toggleState === 'dark'? settoggleState('light') : settoggleState('dark');
+    console.log(toggleState)
 
       const screenval = document.querySelector('.screenval');
       const header = document.querySelector('.header');
       
       // btn.style.
-      screenval.style.color = toggleState === 'light' ? 'black' : 'black';
-      header.style.color = toggleState === 'light' ? 'black' : 'black';
+      screenval.style.color = toggleState === 'dark' ? 'black' : 'white';
+      header.style.color = toggleState === 'dark' ? 'black' : 'white';
   }
 
   const bodyStyle = {
